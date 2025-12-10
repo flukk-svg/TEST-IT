@@ -441,11 +441,11 @@
     // --------------------------------------------------------------------------------
     // ส่วนที่ 1: การตั้งค่าและการสื่อสารกับ Google Apps Script (Backend)
     // --------------------------------------------------------------------------------
-    const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyV2HciZp797yLe6VcczOnO1gA9AJqF-JDQ6tP86rAjmonCxUX8MEOkYFZ5yi2IcUzQ/exec'; // <--- ใส่ URL ตรงนี้ 
+    const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbz02XTzyY8DOYxX-oISe0iccqivk9ryBRxRgpVNhRSlfgC6er2Z5e-MbXiZ5y6TpIW1/exec'; // <--- ใส่ URL ตรงนี้ 
     
     // ฟังก์ชันหลักสำหรับสื่อสารกับ Apps Script
     async function postData(action, payload) {
-      if (!SCRIPT_URL || SCRIPT_URL === 'https://script.google.com/macros/s/AKfycbyV2HciZp797yLe6VcczOnO1gA9AJqF-JDQ6tP86rAjmonCxUX8MEOkYFZ5yi2IcUzQ/exec') {
+      if (!SCRIPT_URL || SCRIPT_URL === 'YOUR_DEPLOYED_APPS_SCRIPT_WEB_APP_URL') {
           console.error("SCRIPT_URL is not set.");
           return { status: 'error', message: 'กรุณาใส่ Apps Script URL ในโค้ดก่อน' };
       }
